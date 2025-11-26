@@ -16,7 +16,7 @@ MOVES_COUNT = 0
 
 def display_rods():
     """Display the current state of all rods."""
-    
+
     for rod_name in ["A", "B", "C"]:
         disks = rods[rod_name]
         print(f"Rod {rod_name}: {disks}")
@@ -58,7 +58,7 @@ if __name__ == "__main__":
     if args.n <= 0:
         print("Number of disks must be a positive integer.")
     else:
-        
+
         # Initialize rods with disks on rod A (largest at bottom, smallest at top)
         rods = {"A": list(range(args.n, 0, -1)), "B": [], "C": []}
 
